@@ -2,6 +2,8 @@ package net.summertides.cozyhomes;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.summertides.cozyhomes.item.ModItemGroups;
+import net.summertides.cozyhomes.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -11,7 +13,7 @@ public class CozyHomes implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-
-		LOGGER.info("Hello Fabric world!");
+		ModItemGroups.registerItemGroups();
+		ModItems.registerModItems();
 	}
 }
