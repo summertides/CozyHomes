@@ -8,6 +8,7 @@ import net.minecraft.registry.Registry;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 import net.summertides.cozyhomes.CozyHomes;
+import net.summertides.cozyhomes.block.ModBlocks;
 
 public class ModItemGroups {
 
@@ -17,7 +18,13 @@ public class ModItemGroups {
                     .displayName(Text.translatable("itemgroup.cozyhomes"))
                     .icon(() -> new ItemStack(ModItems.NULLTEST))
                     .entries((displayContext, entries) -> {
+
+//                      Add all mod items here for Cozy Homes group in creative menu
                         entries.add(ModItems.NULLTEST);
+                        entries.add(ModBlocks.OAK_TABLE);
+
+
+
 
                     }).build());
 
