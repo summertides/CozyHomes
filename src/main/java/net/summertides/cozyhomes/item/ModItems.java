@@ -12,18 +12,12 @@ import net.summertides.cozyhomes.CozyHomes;
 public class ModItems {
     public static final Item NULLTEST = registerItem("nulltest", new Item(new FabricItemSettings()));
 
-    private static void addItemsToIngredientItemGroup(FabricItemGroupEntries entries) {
-        entries.add(NULLTEST);
-    }
-
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, new Identifier(CozyHomes.MOD_ID, name), item);
     }
 
     public static void registerModItems() {
         CozyHomes.LOGGER.info("[" + CozyHomes.MOD_ID + "]" + " Registering Mod Items");
-
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(ModItems::addItemsToIngredientItemGroup);
     }
 
 

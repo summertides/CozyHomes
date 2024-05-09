@@ -22,6 +22,7 @@ public class ModItemGroups {
 //                      Add all mod items here for Cozy Homes group in creative menu
                         entries.add(ModItems.NULLTEST);
                         entries.add(ModBlocks.OAK_TABLE);
+                        entries.add(ModBlocks.OAK_CHAIR);
 
 
 

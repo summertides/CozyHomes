@@ -1,0 +1,25 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "cozyhomes:block/oak_chair"
+    },
+    "facing=south": {
+      "model": "cozyhomes:block/oak_chair",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "cozyhomes:block/oak_chair",
+      "y": 270
+    },
+    "facing=east": {
+      "model": "cozyhomes:block/oak_chair",
+      "y": 90
+    },
+    "facing=up": {
+      "model": "cozyhomes:block/oak_chair"
+    },
+    "facing=down": {
+      "model": "cozyhomes:block/oak_chair"
+    }
+  }
+}
