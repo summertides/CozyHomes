@@ -2,7 +2,6 @@ package net.summertides.cozyhomes.block;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
-import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings.*;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.item.BlockItem;
@@ -18,7 +17,7 @@ public class ModBlocks {
             new Block(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS).nonOpaque()));
 
     public static final Block OAK_CHAIR = registerBlock("oak_chair",
-            new OakChair(FabricBlockSettings.copyOf().strength(1f)));
+            new OakChair(FabricBlockSettings.create().nonOpaque()));
 
 
     private static Block registerBlock(String name, Block block) {
